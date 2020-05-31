@@ -8,6 +8,8 @@ class Buildhl < Formula
 
   def install
     system "cmake", ".", *std_cmake_args
+    system "make"
+    system "make", "install"
   end
 
   test do
